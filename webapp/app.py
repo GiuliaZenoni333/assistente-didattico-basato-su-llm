@@ -82,7 +82,7 @@ def get_pipeline(course):
 
     # Indice del corso selezionato
     chroma_path = (
-        ROOT / "rag_system" / "Llama_3_2"
+        ROOT / "rag_system" / "llama_3_2"
         / "chroma_db" / course
     )
 

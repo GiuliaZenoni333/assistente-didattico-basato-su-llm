@@ -98,9 +98,9 @@ The retrieval component was evaluated using:
 ## Repository Contents
 
 - `rag_system/` — RAG implementation and model configurations.
-- `evaluation/questions/` — Evaluation questions and reference answers.
+- `evaluation/questions/` — Evaluation questions and their categories.
 - `evaluation/llama_3.2/` — Llama 3.2 responses, manual assessments, metrics, and error analysis.
-- `evaluation/phi_4_mini/` — Phi-4-mini responses, manual assessments, metrics, and error analysis.
+- `evaluation/phi4/` — Phi-4-mini responses, manual assessments, metrics, and error analysis.
 - `evaluation/comparison/` — Model comparison scripts.
 - `webapp/` — Web interface for students and instructors.
 - `requirements.txt` — Python dependencies.
