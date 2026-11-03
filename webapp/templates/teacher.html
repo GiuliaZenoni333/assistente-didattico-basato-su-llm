@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Analisi didattica — UniTo</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="teacher-modern">
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/" aria-label="Home assistente didattico">
+            <img src="{{ url_for('static', filename='logo.png') }}"
+                 alt="Logo"
+                 class="unito-logo">
+
+            <span class="brand-divider"></span>
+
+            <span class="brand-program">
+                Corsi di Studi<br>
+                <strong>in Informatica</strong>
+            </span>
+        </a>
+
+        <div class="header-side">
+            <span class="header-tag">Assistente didattico · Prototipo</span>
+        </div>
+    </div>
+</header>
+
+  <main class="teacher-main">
+  <section class="teacher-hero" aria-label="Riepilogo corso">
+    <div class="teacher-eyebrow">AREA DOCENTE · ANALISI DELLE DOMANDE</div>
+    <h1 class="teacher-course-title">Programmazione I</h1>
+    <div class="topics-summary"><div class="topics-big-number" id="clusters" aria-live="polite">—</div><div class="topics-big-label">Argomenti individuati</div></div>
+    <a href="#argomenti" class="hero-scroll">Esplora gli argomenti ↓</a>
+  </section>
+  <section class="teacher-topics" id="argomenti">
+    <div class="section-heading"><div><p class="teacher-eyebrow">PANORAMICA</p><h2>Argomenti delle domande</h2></div></div>
+    <div id="topicCards" class="topic-card-list" aria-live="polite">Caricamento degli argomenti...</div>
+  </section>
+</main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script>if (typeof initTeacherDashboard === 'function') initTeacherDashboard();</script>
+</body></html>

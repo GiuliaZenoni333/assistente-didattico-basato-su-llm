@@ -1,0 +1,92 @@
+{
+  "experiment": "phi4_progr1_reranker",
+  "total_questions": 50,
+  "total_problematic_questions": 26,
+  "error_categories": {
+    "incorrect_answer": 13,
+    "incomplete_answer": 16,
+    "unsupported_answer": 10,
+    "incorrect_abstention": 2
+  },
+  "errors_by_difficulty": {
+    "easy": {
+      "total_errors": 7,
+      "question_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    "medium": {
+      "total_errors": 7,
+      "question_ids": [
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "hard": {
+      "total_errors": 8,
+      "question_ids": [
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30
+      ]
+    }
+  },
+  "errors_by_question_type": {
+    "answerable": {
+      "total_errors": 22,
+      "question_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30
+      ]
+    },
+    "premise_error": {
+      "total_errors": 4,
+      "question_ids": [
+        32,
+        35,
+        39,
+        40
+      ]
+    },
+    "unanswerable": {
+      "total_errors": 0,
+      "question_ids": []
+    }
+  }
+}

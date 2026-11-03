@@ -1,0 +1,12 @@
+{
+  "system": "Llama 3.2 + reranker",
+  "course": "Programmazione 1",
+  "total_questions": 50,
+  "problematic_questions": 34,
+  "error_categories": {
+    "incorrect_answer": 29,
+    "incomplete_answer": 20,
+    "unsupported_answer": 16,
+    "incorrect_abstention": 13
+  }
+}

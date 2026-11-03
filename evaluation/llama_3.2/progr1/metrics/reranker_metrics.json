@@ -1,0 +1,495 @@
+{
+  "experiment": "llama_3.2_progr1_reranker",
+  "total_questions": 50,
+  "correctness": {
+    "total": 50,
+    "mean": 0.3947,
+    "counts": {
+      "0.0": {
+        "count": 17,
+        "percentage": 34.0
+      },
+      "0.5": {
+        "count": 12,
+        "percentage": 24.0
+      },
+      "1.0": {
+        "count": 9,
+        "percentage": 18.0
+      },
+      "N/A": {
+        "count": 12,
+        "percentage": 24.0
+      }
+    }
+  },
+  "completeness": {
+    "total": 50,
+    "mean": 0.5395,
+    "counts": {
+      "0.0": {
+        "count": 15,
+        "percentage": 30.0
+      },
+      "0.5": {
+        "count": 5,
+        "percentage": 10.0
+      },
+      "1.0": {
+        "count": 18,
+        "percentage": 36.0
+      },
+      "N/A": {
+        "count": 12,
+        "percentage": 24.0
+      }
+    }
+  },
+  "source_support": {
+    "total": 50,
+    "mean": 0.7875,
+    "counts": {
+      "0.0": {
+        "count": 1,
+        "percentage": 2.0
+      },
+      "0.5": {
+        "count": 15,
+        "percentage": 30.0
+      },
+      "1.0": {
+        "count": 24,
+        "percentage": 48.0
+      },
+      "N/A": {
+        "count": 10,
+        "percentage": 20.0
+      }
+    }
+  },
+  "abstention": {
+    "total": 50,
+    "mean": 0.4348,
+    "counts": {
+      "0.0": {
+        "count": 13,
+        "percentage": 26.0
+      },
+      "1.0": {
+        "count": 10,
+        "percentage": 20.0
+      },
+      "N/A": {
+        "count": 27,
+        "percentage": 54.0
+      }
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 10,
+      "correctness": {
+        "total": 10,
+        "mean": 0.4,
+        "counts": {
+          "0.0": {
+            "count": 5,
+            "percentage": 50.0
+          },
+          "0.5": {
+            "count": 2,
+            "percentage": 20.0
+          },
+          "1.0": {
+            "count": 3,
+            "percentage": 30.0
+          }
+        }
+      },
+      "completeness": {
+        "total": 10,
+        "mean": 0.5,
+        "counts": {
+          "0.0": {
+            "count": 5,
+            "percentage": 50.0
+          },
+          "1.0": {
+            "count": 5,
+            "percentage": 50.0
+          }
+        }
+      },
+      "source_support": {
+        "total": 10,
+        "mean": 0.7,
+        "counts": {
+          "0.0": {
+            "count": 1,
+            "percentage": 10.0
+          },
+          "0.5": {
+            "count": 4,
+            "percentage": 40.0
+          },
+          "1.0": {
+            "count": 5,
+            "percentage": 50.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 10,
+        "mean": 0.0,
+        "counts": {
+          "0.0": {
+            "count": 2,
+            "percentage": 20.0
+          },
+          "N/A": {
+            "count": 8,
+            "percentage": 80.0
+          }
+        }
+      }
+    },
+    "medium": {
+      "total": 10,
+      "correctness": {
+        "total": 10,
+        "mean": 0.55,
+        "counts": {
+          "0.0": {
+            "count": 1,
+            "percentage": 10.0
+          },
+          "0.5": {
+            "count": 7,
+            "percentage": 70.0
+          },
+          "1.0": {
+            "count": 2,
+            "percentage": 20.0
+          }
+        }
+      },
+      "completeness": {
+        "total": 10,
+        "mean": 0.8,
+        "counts": {
+          "0.5": {
+            "count": 4,
+            "percentage": 40.0
+          },
+          "1.0": {
+            "count": 6,
+            "percentage": 60.0
+          }
+        }
+      },
+      "source_support": {
+        "total": 10,
+        "mean": 0.9,
+        "counts": {
+          "0.5": {
+            "count": 2,
+            "percentage": 20.0
+          },
+          "1.0": {
+            "count": 8,
+            "percentage": 80.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 10,
+        "mean": null,
+        "counts": {
+          "N/A": {
+            "count": 10,
+            "percentage": 100.0
+          }
+        }
+      }
+    },
+    "hard": {
+      "total": 10,
+      "correctness": {
+        "total": 10,
+        "mean": 0.5625,
+        "counts": {
+          "0.0": {
+            "count": 2,
+            "percentage": 20.0
+          },
+          "0.5": {
+            "count": 3,
+            "percentage": 30.0
+          },
+          "1.0": {
+            "count": 3,
+            "percentage": 30.0
+          },
+          "N/A": {
+            "count": 2,
+            "percentage": 20.0
+          }
+        }
+      },
+      "completeness": {
+        "total": 10,
+        "mean": 0.8125,
+        "counts": {
+          "0.0": {
+            "count": 1,
+            "percentage": 10.0
+          },
+          "0.5": {
+            "count": 1,
+            "percentage": 10.0
+          },
+          "1.0": {
+            "count": 6,
+            "percentage": 60.0
+          },
+          "N/A": {
+            "count": 2,
+            "percentage": 20.0
+          }
+        }
+      },
+      "source_support": {
+        "total": 10,
+        "mean": 0.75,
+        "counts": {
+          "0.5": {
+            "count": 5,
+            "percentage": 50.0
+          },
+          "1.0": {
+            "count": 5,
+            "percentage": 50.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 10,
+        "mean": 0.0,
+        "counts": {
+          "0.0": {
+            "count": 2,
+            "percentage": 20.0
+          },
+          "N/A": {
+            "count": 8,
+            "percentage": 80.0
+          }
+        }
+      }
+    }
+  },
+  "by_question_type": {
+    "answerable": {
+      "total": 30,
+      "correctness": {
+        "total": 30,
+        "mean": 0.5,
+        "counts": {
+          "0.0": {
+            "count": 8,
+            "percentage": 26.67
+          },
+          "0.5": {
+            "count": 12,
+            "percentage": 40.0
+          },
+          "1.0": {
+            "count": 8,
+            "percentage": 26.67
+          },
+          "N/A": {
+            "count": 2,
+            "percentage": 6.67
+          }
+        }
+      },
+      "completeness": {
+        "total": 30,
+        "mean": 0.6964,
+        "counts": {
+          "0.0": {
+            "count": 6,
+            "percentage": 20.0
+          },
+          "0.5": {
+            "count": 5,
+            "percentage": 16.67
+          },
+          "1.0": {
+            "count": 17,
+            "percentage": 56.67
+          },
+          "N/A": {
+            "count": 2,
+            "percentage": 6.67
+          }
+        }
+      },
+      "source_support": {
+        "total": 30,
+        "mean": 0.7833,
+        "counts": {
+          "0.0": {
+            "count": 1,
+            "percentage": 3.33
+          },
+          "0.5": {
+            "count": 11,
+            "percentage": 36.67
+          },
+          "1.0": {
+            "count": 18,
+            "percentage": 60.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 30,
+        "mean": 0.0,
+        "counts": {
+          "0.0": {
+            "count": 4,
+            "percentage": 13.33
+          },
+          "N/A": {
+            "count": 26,
+            "percentage": 86.67
+          }
+        }
+      }
+    },
+    "premise_error": {
+      "total": 10,
+      "correctness": {
+        "total": 10,
+        "mean": 0.1,
+        "counts": {
+          "0.0": {
+            "count": 9,
+            "percentage": 90.0
+          },
+          "1.0": {
+            "count": 1,
+            "percentage": 10.0
+          }
+        }
+      },
+      "completeness": {
+        "total": 10,
+        "mean": 0.1,
+        "counts": {
+          "0.0": {
+            "count": 9,
+            "percentage": 90.0
+          },
+          "1.0": {
+            "count": 1,
+            "percentage": 10.0
+          }
+        }
+      },
+      "source_support": {
+        "total": 10,
+        "mean": 0.8,
+        "counts": {
+          "0.5": {
+            "count": 4,
+            "percentage": 40.0
+          },
+          "1.0": {
+            "count": 6,
+            "percentage": 60.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 10,
+        "mean": 0.0,
+        "counts": {
+          "0.0": {
+            "count": 9,
+            "percentage": 90.0
+          },
+          "N/A": {
+            "count": 1,
+            "percentage": 10.0
+          }
+        }
+      }
+    },
+    "unanswerable": {
+      "total": 10,
+      "correctness": {
+        "total": 10,
+        "mean": null,
+        "counts": {
+          "N/A": {
+            "count": 10,
+            "percentage": 100.0
+          }
+        }
+      },
+      "completeness": {
+        "total": 10,
+        "mean": null,
+        "counts": {
+          "N/A": {
+            "count": 10,
+            "percentage": 100.0
+          }
+        }
+      },
+      "source_support": {
+        "total": 10,
+        "mean": null,
+        "counts": {
+          "N/A": {
+            "count": 10,
+            "percentage": 100.0
+          }
+        }
+      },
+      "abstention": {
+        "total": 10,
+        "mean": 1.0,
+        "counts": {
+          "1.0": {
+            "count": 10,
+            "percentage": 100.0
+          }
+        }
+      }
+    }
+  },
+  "retrieval": {
+    "evaluated_questions": 40,
+    "excluded_questions": 10,
+    "hit_at_1": {
+      "count": 13,
+      "percentage": 32.5
+    },
+    "hit_at_3": {
+      "count": 22,
+      "percentage": 55.0
+    },
+    "hit_at_5": {
+      "count": 30,
+      "percentage": 75.0
+    },
+    "hit_at_8": {
+      "count": 39,
+      "percentage": 97.5
+    },
+    "mrr": 0.5078
+  }
+}

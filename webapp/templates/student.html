@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I miei corsi · Assistente UniTo</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head><body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/" aria-label="Home assistente didattico">
+            <img src="{{ url_for('static', filename='logo.png') }}"
+                 alt="Logo"
+                 class="unito-logo">
+
+            <span class="brand-divider"></span>
+
+            <span class="brand-program">
+                Corsi di Studi<br>
+                <strong>in Informatica</strong>
+            </span>
+        </a>
+
+        <div class="header-side">
+            <span class="header-tag">Assistente didattico · Prototipo</span>
+        </div>
+    </div>
+</header>
+
+    <main class="courses-main"><div class="eyebrow">AREA STUDENTE</div><h1>I miei corsi</h1><p class="course-intro">Seleziona un insegnamento e consulta i materiali con l'assistente didattico.</p>
+<div class="course-list revised-courses">
+<article class="card enhanced-course"><div class="course-icon">⌘</div><span class="course-meta">LINGUAGGIO C</span><h2>Programmazione I</h2><p>Funzioni, array, cicli, ricorsione e algoritmi.</p><a class="button" href="/chat/progr1">Apri assistente <span aria-hidden="true">→</span></a></article>
+<article class="card enhanced-course"><div class="course-icon green">▤</div><span class="course-meta">PROGETTAZIONE SOFTWARE</span><h2>Sviluppo delle Applicazioni Software</h2><p>UML, casi d'uso, design pattern e progettazione.</p><a class="button" href="/chat/sas">Apri assistente <span aria-hidden="true">→</span></a></article>
+</div><div class="courses-tip"><strong>Come funziona?</strong> Seleziona un corso, poni una domanda e visualizza le fonti recuperate. Puoi ritrovare le conversazioni precedenti dalla barra laterale della chat.</div>
+</main></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ course_name }} · Assistente UniTo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="student-app">
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/" aria-label="Home assistente didattico">
+            <img src="{{ url_for('static', filename='logo.png') }}"
+                 alt="Logo"
+                 class="unito-logo">
+
+            <span class="brand-divider"></span>
+
+            <span class="brand-program">
+                Corsi di Studi<br>
+                <strong>in Informatica</strong>
+            </span>
+        </a>
+
+        <div class="header-side">
+            <span class="header-tag">Assistente didattico · Prototipo</span>
+        </div>
+    </div>
+</header>
+
+  <div class="workspace">
+<aside class="student-sidebar" aria-label="Navigazione studente">
+ <div class="sidebar-group"><div class="sidebar-label">I miei corsi</div>
+ <a class="sidebar-link {{ 'active' if course=='progr1' else '' }}" href="/chat/progr1"><span class="sidebar-ico">⌘</span> Programmazione I</a>
+ <a class="sidebar-link {{ 'active' if course=='sas' else '' }}" href="/chat/sas"><span class="sidebar-ico">▤</span> Sviluppo delle Applicazioni Software</a></div>
+ <div class="sidebar-group conversations-group"><div class="sidebar-row"><div class="sidebar-label">Conversazioni</div><button class="sidebar-add" id="newConversation" title="Nuova conversazione" type="button">＋</button></div><div id="conversationList" class="conversation-list" aria-live="polite"><p class="sidebar-placeholder">Caricamento…</p></div></div>
+ <div class="sidebar-footer"><span class="status-dot"></span> Prototipo locale · UniTo<br><small>Le conversazioni sono associate al codice studente demo.</small></div>
+</aside>
+<main class="workspace-main">
+ <div class="chat-topline"><div><div class="eyebrow">ASSISTENTE DIDATTICO</div><h1>{{ course_name }}</h1><p class="chat-subheading">Fai domande sui materiali del corso e consulta i riferimenti ai documenti.</p></div><span class="course-pill">Materiali del corso</span></div>
+ <section class="chat-panel" aria-label="Conversazione">
+  <div id="messages" class="messages enhanced-messages" aria-live="polite">
+    <div class="welcome-chat"><div class="welcome-symbol">✦</div><h2>Come posso aiutarti?</h2><p>Puoi chiedere spiegazioni, chiarimenti e approfondimenti sugli argomenti del corso.</p>
+    <div class="suggestion-grid" id="suggestions">
+     {% if course == 'progr1' %}
+      <button type="button" data-question="Qual è la differenza tra un ciclo for e un ciclo while in C?">Cicli for e while <span>↗</span></button>
+      <button type="button" data-question="Come si definisce una funzione in C?">Funzioni in C <span>↗</span></button>
+      <button type="button" data-question="Che cos'è la ricorsione?">Ricorsione <span>↗</span></button>
+     {% else %}
+      <button type="button" data-question="Qual è lo scopo del design pattern Adapter?">Pattern Adapter <span>↗</span></button>
+      <button type="button" data-question="Che cosa rappresenta un caso d'uso UML?">Casi d’uso UML <span>↗</span></button>
+      <button type="button" data-question="Qual è la differenza tra include ed extend?">Include ed extend <span>↗</span></button>
+     {% endif %}
+    </div></div>
+  </div>
+  <form id="chatForm" class="enhanced-compose"><label for="question" class="sr-only">Scrivi la tua domanda</label><textarea id="question" maxlength="2000" rows="2" placeholder="Scrivi una domanda sui materiali del corso…"></textarea><div class="compose-bottom"><span>Invio con Enter · A capo con Shift+Enter</span><button id="sendButton" type="submit">Invia <span aria-hidden="true">➤</span></button></div></form>
+ </section>
+ <p class="workspace-note">Le risposte sono generate automaticamente. Consulta sempre le fonti indicate.</p>
+</main></div>
+<script>const COURSE = {{ course|tojson }};</script>
+<script src="{{ url_for('static', filename='script.js') }}"></script></body></html>

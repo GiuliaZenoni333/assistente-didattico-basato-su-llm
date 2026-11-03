@@ -1,0 +1,50 @@
+{"id": 1, "question": "Che cos'è un modello di dominio?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 2, "question": "Che cos’è una classe concettuale?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 3, "question": "Che cos'è un'associazione nel modello di dominio?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 4, "question": "Che cos'è lo scenario principale di successo di un caso d'uso?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 5, "question": "Che cosa rappresentano le precondizioni e le post-condizioni di un caso d'uso?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 6, "question": "Cos’è la molteplicità e come funziona?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 7, "question": "Qual è la differenza tra un'aggregazione e una composizione?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 8, "question": "Nell'esempio dell'SSD di NextGen, quali elementi vengono mostrati nel diagramma e quale scenario del caso d'uso rappresenta?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 9, "question": "Perché uno scenario principale di successo normalmente non contiene condizioni o diramazioni?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 10, "question": "Che cosa sono le estensioni di un caso d'uso?", "question_type": "answerable", "difficulty": "easy"}
+{"id": 11, "question": "Che cosa mostra un SSD?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 12, "question": "Qual è la differenza tra gli eventi di sistema mostrati in un SSD e le azioni interne eseguite dal sistema?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 13, "question": "Nell'esempio del Monopoly, come viene modellato il caso d'uso “Gioca una Partita a Monopoly” e perché le regole del gioco vengono trattate come regole di dominio invece che come estensioni del caso d'uso?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 14, "question": "Nell'esempio enterItem, quali istruzioni Java corrispondono ai due messaggi inviati dal Register?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 15, "question": "Perché, nell'implementazione di enterItem, il Register delega la ricerca della ProductDescription al ProductCatalog e la creazione della SalesLineItem alla Sale?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 16, "question": "Come viene rappresentata nel codice Java una relazione uno-a-molti tra oggetti?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 17, "question": "Qual è lo scopo del design pattern Adapter?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 18, "question": "Qual è il problema risolto dal pattern Facade e come lo risolve?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 19, "question": "Come funziona il pattern Observer e in che modo riduce l’accoppiamento tra publisher e subscriber?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 20, "question": "Come può essere strutturata una variante di Abstract Factory per scegliere dinamicamente quale factory concreta utilizzare?", "question_type": "answerable", "difficulty": "medium"}
+{"id": 21, "question": "Nel sistema POS NextGen, come si applica il pattern GRASP Information Expert per calcolare il totale di una vendita? Spiega come vengono distribuite le responsabilità tra Sale, SalesLineItem e ProductDescription e come collaborano questi oggetti.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 22, "question": "Nel sistema POS NextGen, la creazione di un oggetto CashPayment può essere assegnata alla classe Register oppure alla classe Sale. Come cambiano le dipendenze tra le classi nelle due soluzioni? Spiega quale soluzione è preferibile applicando i pattern GRASP Creator e Low Coupling.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 23, "question": "Nel sistema POS NextGen, come si può utilizzare il pattern Observer per aggiornare automaticamente la finestra SaleFrame1 quando cambia il totale di una vendita? Spiega il ruolo di Sale, SaleFrame1 e dell'interfaccia PropertyListener, descrivendo la registrazione del subscriber, la notifica degli eventi e il modo in cui questa soluzione favorisce un basso accoppiamento tra modello e vista.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 24, "question": "Nel sistema POS NextGen, come si definisce il contratto dell'operazione enterItem? Spiega le pre-condizioni, le post-condizioni e i cambiamenti nel modello di dominio.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 25, "question": "Nel sistema POS NextGen, come si applica il pattern Strategy per gestire diverse politiche di sconto? Spiega il ruolo di Sale, dell'interfaccia ISalePricingStrategy e della PricingStrategyFactory.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 26, "question": "Durante l'operazione enterItem del sistema POS NextGen, come vengono utilizzate e trasformate le forme di visibilità tra Register, ProductCatalog, Sale, ProductDescription e SalesLineItem?", "question_type": "answerable", "difficulty": "hard"}
+{"id": 27, "question": "Nel gioco Monopoly, come si può utilizzare il pattern GRASP Polymorphism per gestire i diversi comportamenti delle caselle senza ricorrere a uno switch? Spiega il ruolo di Player e delle diverse sottoclassi di Square.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 28, "question": "Nella progettazione dei casi d'uso UML, quando conviene utilizzare include e quando extend? Spiega come scegliere tra le due relazioni per evitare duplicazioni e gestire nuove funzionalità senza modificare il caso d'uso originale.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 29, "question": "Un team Scrum deve pianificare un nuovo Sprint partendo dal Product Backlog. Come vengono selezionate, organizzate e monitorate le attività? Spiega le responsabilità di Product Owner, Development Team e Scrum Master.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 30, "question": "In un modello di dominio UML, come si decide se rappresentare una relazione mediante un'associazione, una composizione o un attributo? Spiega i criteri utilizzando gli esempi di automobile-ruote, Board-Square e Cashier-Register.", "question_type": "answerable", "difficulty": "hard"}
+{"id": 31, "question": "Nel Test-Driven Development (TDD), prima si implementa la funzionalità e soltanto dopo si scrivono i test per verificarla. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 32, "question": "In UML, un diagramma di sequenza di sistema (SSD) mostra anche tutte le operazioni interne eseguite dal sistema, oltre alle interazioni con gli attori esterni. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 33, "question": "In UML, se due classi hanno una relazione intero-parte, devo necessariamente utilizzare la composizione, anche se la parte può esistere indipendentemente dall'intero. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 34, "question": "In Scrum, il Product Owner assegna i compiti agli sviluppatori. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 35, "question": "In UML, un attributo derivato si indica con il simbolo * davanti al nome. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 36, "question": "Gli eventi di sistema devono essere denominati in base al dispositivo utilizzato, ad esempio scanItem per un lettore di codici a barre. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 37, "question": "In UML, ogni comportamento opzionale di un caso d'uso deve essere rappresentato obbligatoriamente con una relazione extend. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 38, "question": "In UML, un attore di un caso d'uso deve essere necessariamente una persona. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 39, "question": "Il controller GRASP appartiene allo strato dell'interfaccia utente (UI). È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 40, "question": "Nello sviluppo iterativo, il risultato di ogni iterazione è un prototipo temporaneo destinato a essere scartato. È corretto?", "question_type": "premise_error", "difficulty": "medium"}
+{"id": 41, "question": "Quale versione esatta di Java è stata utilizzata per sviluppare il sistema POS NextGen?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 42, "question": "Quanti errori software sono stati rilevati durante i test del sistema POS NextGen?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 43, "question": "Qual è stato il costo totale di sviluppo del sistema POS NextGen?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 44, "question": "Quale marca e modello di lettore di codici a barre è stato installato nel sistema POS NextGen?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 45, "question": "In quale data esatta è stato avviato il primo Sprint di sviluppo del sistema POS NextGen?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 46, "question": "Quali sono gli ingredienti della pizza margherita?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 47, "question": "Qual’è la capitale della Germania?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 48, "question": "Quando iniziò la prima guerra mondiale?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 49, "question": "Chi ha dipinto la gioconda?", "question_type": "unanswerable", "difficulty": "easy"}
+{"id": 50, "question": "Quali sono le 7 meraviglie del mondo?", "question_type": "unanswerable", "difficulty": "easy"}

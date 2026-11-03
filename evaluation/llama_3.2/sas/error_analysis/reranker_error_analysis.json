@@ -1,0 +1,12 @@
+{
+  "system": "Llama 3.2 + reranker",
+  "course": "SAS",
+  "total_questions": 50,
+  "problematic_questions": 30,
+  "error_categories": {
+    "incorrect_answer": 17,
+    "incomplete_answer": 21,
+    "unsupported_answer": 28,
+    "incorrect_abstention": 7
+  }
+}

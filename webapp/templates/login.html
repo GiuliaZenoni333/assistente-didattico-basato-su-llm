@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesso - UniTo Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    
+    <header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/" aria-label="Home assistente didattico">
+            <img src="{{ url_for('static', filename='logo.png') }}"
+                 alt="Logo"
+                 class="unito-logo">
+
+            <span class="brand-divider"></span>
+
+            <span class="brand-program">
+                Corsi di Studi<br>
+                <strong>in Informatica</strong>
+            </span>
+        </a>
+
+        <div class="header-side">
+            <span class="header-tag">Assistente didattico · Prototipo</span>
+        </div>
+    </div>
+</header>
+
+    <main class="login-box card">
+
+        <h1>Benvenuto!</h1>
+        <p>Accedi al tuo assistente didattico.</p>
+
+        <label for="role">Accedi come</label>
+        <select id="role">
+            <option value="student">Studente</option>
+            <option value="teacher">Docente</option>
+        </select>
+
+        <label for="email">Email universitaria</label>
+        <input id="email" type="email"
+               placeholder="nome.cognome@unito.it">
+
+        <label for="password">Password</label>
+        <input id="password" type="password"
+               placeholder="Password">
+
+        <button onclick="loginDemo()">Accedi</button>
+
+        <p class="note">
+            Versione dimostrativa: le credenziali
+            non vengono ancora verificate.
+        </p>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
