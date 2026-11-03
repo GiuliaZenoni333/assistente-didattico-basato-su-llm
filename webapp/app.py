@@ -429,7 +429,7 @@ def course_pdfs(course):
     directory = ROOT / "data" / course / "documents"
     if request.method == "POST":
         if not ROOT.is_dir():
-            return jsonify(error="Cartella TESI_RAG non trovata accanto a webapp 3."), 400
+            return jsonify(error="Cartella non trovata accanto a webapp."), 400
         files = request.files.getlist("files")
         if not files:
             return jsonify(error="Seleziona almeno un file PDF."), 400
